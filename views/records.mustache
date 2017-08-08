@@ -7,11 +7,23 @@
 </head>
 <body>
   <h1>Records<h1>
-  {{#records}}
-  <div>
-    {{recordName}}, {{bandName}}, {{releaseDate}}, {{topHits}}
-  </div>
-  {{/records}}
-  </form>
+<div class="wrapper">
+    {{#records}}
+    <div class="box" data-id="{{_id}}">
+    <img src="https://s-media-cache-ak0.pinimg.com/originals/d7/be/16/d7be165d7c5e2a8a891fed48c214082f.png">
+      <div class="band">
+         Band Name: {{bandName}} 
+      </div>
+      <div class="album">
+         Album Name: {{albumName}} 
+      </div>
+      <div class="hit">
+         Top Hit: {{topHits}}
+      </div>
+      <a href="/edit/record/{{_id}}"><button id="edit">Edit</button></a>
+      <button id="delete">Delete</button>
+    </div>
+    {{/records}}
+</div>
 </body>
 </html>

@@ -29,8 +29,6 @@ function addNewrecord(recordJSON){
 
 //let record = new Record({albumName:"exodus", bandName:"Bob Marley & The Wailers", releaseDate:1977-06-03, topHits: "One Love"}
 
-
-
 module.exports = {
 	Record : Record,
 	addNewrecord: addNewrecord

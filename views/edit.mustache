@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+  <h1>Edit Records<h1>
+  <form action="/edit/record" method="post">
+  <input type="hidden" name="_id" value="{{_id}}">
+  	<input type="text" name="albumName" placeholder="Album Name" value="{{albumName}}">
+  	
+  	<input type="text" name="bandName" placeholder="Band Name" value="{{bandName}}">
+  	
+  	<input type="text" name="releaseDate" placeholder="Release Date" value="{{releaseDate}}">
+  
+  	<input type="text" name="topHits" placeholder="Top Hits" value="{{topHits}}">
+  	
+  	<button type="submit">Save</button>
+  </form>
+</body>
+</html>
